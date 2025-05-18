@@ -54,7 +54,7 @@ export async function getAllInfoUser(req, res) {
           e.primer_apellido,
 		      e.segundo_apellido,
 		      e.sexo,
-		      e.dirreccion,
+		      e.direccion,
 		      e.dni,
 		      e.fecha_nac,
 		      e.telefono,
@@ -86,7 +86,7 @@ export async function updateUser(req, res) {
     primer_apellido,
     segundo_apellido,
     sexo,
-    dirreccion,
+    direccion,
     dni,
     fecha_nac,
     telefono,
@@ -122,7 +122,7 @@ export async function updateUser(req, res) {
       .input("primer_apellido", primer_apellido)
       .input("segundo_apellido", segundo_apellido)
       .input("sexo", sexo)
-      .input("dirreccion", dirreccion)
+      .input("direccion", direccion)
       .input("dni", dni)
       .input("fecha_nac", fecha_nac)
       .input("telefono", telefono)
@@ -133,7 +133,7 @@ export async function updateUser(req, res) {
              primer_apellido = @primer_apellido,
              segundo_apellido= @segundo_apellido,
              sexo            = @sexo,
-             dirreccion      = @dirreccion,
+             direccion     = @direccion,
              dni             = @dni,
              fecha_nac       = @fecha_nac,
              telefono        = @telefono,

@@ -459,8 +459,8 @@ export default function UserModal({
                       </label>
                       <textarea
                         className={inputBase + " h-20 resize-none"}
-                        value={form.dirreccion || ""}
-                        onChange={handle("dirreccion")}
+                        value={form.direccion || ""}
+                        onChange={handle("direccion")}
                         readOnly={readOnly}
                       />
                     </div>

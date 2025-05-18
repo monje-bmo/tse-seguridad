@@ -14,6 +14,12 @@ import LoginPage from "./pages/LoginPage";
 
 // pages users
 import MantenimientoUsuarios from "./pages/MantenimientoUsuarios";
+import Report1 from "./pages/Report1";
+import Report2 from "./pages/Report2";
+import Report3 from "./pages/Report3";
+import Report4 from "./pages/Report4";
+import Report5 from "./pages/Report5";
+import SubMenuL from "./pages/SubMenuL";
 
 // pantallas internas (crea stubs por ahora)
 const Dashboard = () => <h1 className="text-xl"></h1>;
@@ -46,7 +52,15 @@ function App() {
           {/* layout bare SOLO para man-user */}
           <Route path="app" element={<AppLayoutBare />}>
             <Route path="man-user" element={<MantenimientoUsuarios />} />
+            <Route path="control-acceso" element={<Report1 />} />
+            <Route path="control-acceso-voto" element={<Report2 />} />
+            <Route path="credenciales" element={<Report3 />} />
+            <Route path="logistica" element={<SubMenuL />} />
+
+            <Route path="logistica/info-vehiculos" element={<Report4 />} />
+            <Route path="logistica/vehiculos-usados" element={<Report5 />} />
           </Route>
+          
         </Route>
       </Routes>
     </Router>
